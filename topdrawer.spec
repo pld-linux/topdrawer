@@ -10,6 +10,7 @@ Source0:	ftp://iris.riken.go.jp/pub/topdrawer/topdrawer-all.tar.gz
 # Source0-md5:	3164cd97e67317c4f3edbbad4eea6527
 BuildRequires:	XFree86-devel
 BuildRequires:	gcc-g77
+BuildRequires:	sed >= 4.0
 #Requires:	ugs >= 2.10d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
