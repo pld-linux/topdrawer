@@ -1,11 +1,13 @@
+# TODO: optflags
 Summary:	A program for drawing physics graphs
+Summary(pl):	Program do rysowania wykresów fizycznych
 Name:		topdrawer
 Version:	5.12.14c
 Release:	1
 License:	Free
 Group:		X11/Applications/Science
 Source0:	ftp://iris.riken.go.jp/pub/topdrawer/topdrawer-all.tar.gz
-BuildRequires:	X11-devel
+BuildRequires:	XFree86-devel
 BuildRequires:	gcc-g77
 #Requires:	ugs >= 2.10d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -14,6 +16,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Topdrawer is a keyword-driven interface designed to produce physics
 graphs with minimal specifications.  It uses UGS (Unified Graphics
 System) also developed at SLAC.
+
+%description -l pl
+Topdrawer to sterowany z klawiatury interfejs zaprojektowany do
+tworzenia wykresów fizycznych o minimalnej specyfikacji. U¿ywa systemu
+graficznego UGS (Unified Graphics System) tak¿e rozwijanego w SLAC.
 
 %prep
 %setup -n topdrawer -q
@@ -34,7 +41,8 @@ xmkmf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT%{_bindir}
+
 install td $RPM_BUILD_ROOT%{_bindir}
 
 %clean
