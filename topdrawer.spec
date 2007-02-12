@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	A program for drawing physics graphs
-Summary(pl.UTF-8):   Program do rysowania wykresów fizycznych
+Summary(pl.UTF-8):	Program do rysowania wykresów fizycznych
 Name:		topdrawer
 Version:	5.12.14c
 Release:	1
