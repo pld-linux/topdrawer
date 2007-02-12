@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	A program for drawing physics graphs
-Summary(pl):	Program do rysowania wykresÛw fizycznych
+Summary(pl.UTF-8):   Program do rysowania wykres√≥w fizycznych
 Name:		topdrawer
 Version:	5.12.14c
 Release:	1
@@ -19,10 +19,10 @@ Topdrawer is a keyword-driven interface designed to produce physics
 graphs with minimal specifications.  It uses UGS (Unified Graphics
 System) also developed at SLAC.
 
-%description -l pl
+%description -l pl.UTF-8
 Topdrawer to sterowany z klawiatury interfejs zaprojektowany do
-tworzenia wykresÛw fizycznych o minimalnej specyfikacji. Uøywa systemu
-graficznego UGS (Unified Graphics System) takøe rozwijanego w SLAC.
+tworzenia wykres√≥w fizycznych o minimalnej specyfikacji. U≈ºywa systemu
+graficznego UGS (Unified Graphics System) tak≈ºe rozwijanego w SLAC.
 
 %prep
 %setup -n topdrawer -q
